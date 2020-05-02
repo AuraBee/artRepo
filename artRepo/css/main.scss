@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+*{
+        margin:0;
+        
+}
+
+body, html {
+    font-family:'Montserrat';
+    margin:0;
+    height: 100%;
+    //background-color: rgba(23, 38, 243, 0.856);
+    color: rgb(18, 2, 43);
+    box-sizing: border-box;
+   // overflow: hidden;
+
+        a {
+            text-decoration: none;
+        }
+
+     }
+
+     header {
+         padding: 1rem 5rem;
+
+         .logo {
+             color: black;
+             font-size: x-small;
+           
+         }
+
+         .menu-btn {
+             width: 3rem;
+             float:right;
+             cursor: pointer;
+         }
+     }
+
+     main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 12fr));
+        margin: 0.5rem;
+        padding: 1rem;
+
+       
+
+        .card {
+
+           margin: auto auto; //auto to center
+           align-items: flex-end;
+           //padding-bottom: 1em;
+          // width: 18em;
+  
+
+           &::before { //adds line above h1
+               content: '';
+               border-top: .5px solid rgba(143, 24, 123, 0.842);
+               display: block;
+               width: 80%;
+               padding-bottom: 1em;
+           }
+       
+        }
+
+       .card:nth-child(1){
+           // margin: 0 auto;
+            text-align: left;
+            padding-top: 2rem;
+            //font-weight: 700;
+        }
+
+        .card:nth-child(2){
+            //margin: 5rem auto;
+            padding-top: 2rem;
+            text-align: left;
+            font-weight: 700;
+        }
+
+
+     
+            .card:nth-child(3) {
+            //margin: 8rem auto;
+            padding-top: 2rem;
+            font-size: smaller;
+            text-align: right;
+            //font-weight: 400;
+        
+        }
+        
+
+        
+       }
+   
+       section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 9fr));
+        margin: 0.5rem;
+        padding: 1rem; 
+
+        p {
+            font-size: small;
+        }
+       }
+       
+       /*/NAV BAR ///*/
+
+     nav {
+        position: absolute;
+        background: black;
+        padding: 2em;
+        width:calc(100% - 4em);
+        height: calc(100vh - 4em);
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform-origin: left;
+
+
+        .close-btn{
+        
+            width:18px;
+            float:right;
+            cursor:pointer;
+            opacity: 0;
+
+        }
+
+
+        ul {
+
+            list-style-type: none;
+            margin: 15% auto 0 auto;
+            padding: 0; // removes default browser padding on ul!
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            width:80%;
+
+            a {
+                color:white;
+                font-weight: bold;
+                font-size: 2em;
+            }
+            
+            span {
+                color:gray;
+                display: block;
+                font-size: 1.25em;
+                margin-top: 20px;
+            }
+
+            li {
+                opacity: 0;
+            }
+        }
+    }
+
+    .show-menu {
+         display: block;
+         animation: slide-menu 1s ease-in forwards;
+                         
+         
+         .close-btn {
+         -webkit-animation: slide-menu 1s ease-in forwards;
+ 
+            animation: show-x 1s 1s forwards;
+         }        
+   
+
+
+        li:nth-of-type(1){
+            animation:menu-item-anim .6s forwards 1s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1s ease-in-out;
+
+            
+            /*animation:menu-item-anim .6s backwards 1s ease-in-out;
+            -webkit-animation:menu-item-anim .6s backwards 1s ease-in-out;*/
+        }
+
+
+        li:nth-of-type(2){
+            animation:menu-item-anim .6s forwards 1.2s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.2s ease-in-out;
+            
+           /* animation:menu-item-anim .6s backwards 1.2s ease-in-out;
+            -webkit-animation:menu-item-anim .6s backwards 1.2s ease-in-out;*/
+        }
+
+
+        li:nth-of-type(3){
+            animation:menu-item-anim .6s bac 1.4s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.4s ease-in-out;
+
+            
+           /* animation:menu-item-anim .6s backwards 1.4s ease-in-out;
+            -webkit-animation:menu-item-anim .6s backwards .1.4s ease-in-out;*/
+        }
+
+
+        li:nth-of-type(4){
+            animation:menu-item-anim .6s forwards 1.6s ease-in-out;
+            -webkit-animation:menu-item-anim .6s forwards 1.6s ease-in-out;
+
+           /* animation:menu-item-anim .6s backwards 1.6s ease-in-out;
+            -webkit-animation:menu-item-anim .6s backwards 1.6s ease-in-out;*/
+        }
+
+    @keyframes slide-menu {
+    from {
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+    } 
+        to {
+        transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1); //do this -- update nav above to reflect this
+        }
+    }
+
+
+
+    @keyframes show-x {
+        from {
+            opacity: 0; 
+        } 
+            to {
+                opacity:1;
+            }
+        }
+
+
+        @keyframes menu-item-anim {
+            from {
+                transform:translateY(30%);
+                -webkit-transform:translateY(30%);
+                -moz-transform:translateY(30%);
+                -ms-transform:translateY(30%);
+                -o-transform:translateY(30%);
+                opacity: 0;
+            } 
+                to {
+                 transform:translateY(0);
+    
+                 opacity:1;
+                }
+            }
+
+
+        }
+
+
+
+/*closes/reverses above//
+        @keyframes slide-menu-return {
+
+           from {
+                transform: scaleX(1);
+                -webkit-transform: scaleX(1);
+                -moz-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                -o-transform: scaleX(1); //do this -- update nav above to reflect this
+                }
+
+
+            to {
+                transform: scaleX(0);
+                -webkit-transform: scaleX(0);
+                -moz-transform: scaleX(0);
+                -ms-transform: scaleX(0);
+                -o-transform: scaleX(0);
+            } 
+                
+            }
+        
+        
+        
+            @keyframes show-x {
+                from {
+                    opacity:1; 
+                } 
+                    to {
+                        opacity: 0;
+                    }
+                }
+        
+        
+                @keyframes menu-item-anim {
+                    from {
+                        transform:translateY(0);
+                       opacity:1;
+                       }
+
+                        to  {
+                            transform:translateY(30%);
+                            -webkit-transform:translateY(30%);
+                            -moz-transform:translateY(30%);
+                            -ms-transform:translateY(30%);
+                            -o-transform:translateY(30%);
+                            opacity: 0;
+                        } 
+                    }
+        
+        */
+                
+     /*/NAV & animation ends/*/

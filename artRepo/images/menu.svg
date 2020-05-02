@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119.5" height="45" viewBox="0 0 119.5 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #6a6060;
+        font-size: 25px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="menu" transform="translate(-78 -22)">
+    <line id="Line_2" data-name="Line 2" class="cls-1" x2="29" transform="translate(166.5 40.75)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x2="29" transform="translate(166.5 32.5)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-1" x2="29" transform="translate(166.5 49)"/>
+    <text id="Menu-2" data-name="Menu" class="cls-2" transform="translate(78 22)"><tspan x="0" y="27">Menu</tspan></text>
+  </g>
+</svg>
