@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="119.5" height="45" viewBox="0 0 119.5 45">
+ 
   <defs>
     <style>
       .cls-1 {
@@ -16,6 +17,7 @@
       }
     </style>
   </defs>
+  
   <g id="menu" transform="translate(-78 -22)">
     <line id="Line_2" data-name="Line 2" class="cls-1" x2="29" transform="translate(166.5 40.75)"/>
     <line id="Line_3" data-name="Line 3" class="cls-1" x2="29" transform="translate(166.5 32.5)"/>
