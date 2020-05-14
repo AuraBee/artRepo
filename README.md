@@ -1,5 +1,6 @@
 # artRepo
 
-main layout using minmax responsive css grid
-big-menu navigation
+main layout using minmax responsive css grid.
+
+with big-menu navigation
 
