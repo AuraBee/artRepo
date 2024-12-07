@@ -18,7 +18,9 @@ rgba(96, 96, 248, 0.212),  rgb(220, 104, 255),
  $color-nav-4: rgb(96, 96, 248);  
  
 *{
-  margin:0;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
         
 }
 
@@ -51,7 +53,7 @@ body, html {
      }
 
      main {
-         background-color: rgb(240, 154, 154);
+        background-color: rgb(240, 154, 154);
         display: grid;
         height: 80vh;
         grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
@@ -166,7 +168,7 @@ body, html {
        /*/NAV///*/
      nav {
         position: absolute;
-        background: black;
+        background: pink;
         padding: 2em;
         width:calc(100% - 4em);
         height: calc(100vh - 4em);
@@ -182,7 +184,7 @@ body, html {
             width:18px;
             float:right;
             cursor:pointer;
-            opacity: 0;
+            opacity: 3;
           }
 
 
