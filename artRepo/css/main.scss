@@ -220,8 +220,8 @@ body, html {
                          
          
          .close-btn {
-         -webkit-animation: slide-menu 1s ease-in forwards;
-         animation: show-x 1s 1s forwards;
+         -webkit-animation: slide-menu 1s ease-out backwards;
+         animation: show-x 1s 1s backwards;
          }        
    
 
